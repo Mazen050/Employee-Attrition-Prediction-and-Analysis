@@ -7,7 +7,7 @@ A Machine Learning–powered HR analytics solution designed to **predict employe
 ## 📌 Overview
 
 Employee attrition increases hiring costs, disrupts business continuity, and lowers company morale.  
-Our system uses ** data-driven insights** to:
+Our system uses **data-driven insights** to:
 
 ✔ Predict whether an employee is at risk of leaving  
 ✔ Identify key drivers behind attrition  
