@@ -23,8 +23,6 @@ Our system uses **data-driven insights** to:
 - ML model lifecycle management using **MLflow**
 - FastAPI backend for prediction serving
 
-🖼️ *Placeholder for Dashboard Screenshot*  
-> A UI dashboard showing employee input form and predicted attrition risk.
 
 ---
 
@@ -50,7 +48,14 @@ We used a **large HR dataset** with ~**250K** employee records and **17 features
 - Satisfaction ratings
 - Compensation and promotion history
 
-🖼️ *Placeholder for Dataset Head Preview*  
+| Age | Attrition | BusinessTravel      | Department               | DistanceFromHome | EnvironmentSatisfaction | JobLevel | JobSatisfaction | MaritalStatus | MonthlyIncome | NumCompaniesWorked | OverTime | PerformanceRating | RelationshipSatisfaction | WorkLifeBalance | YearsSinceLastPromotion | YearsAtCompany |
+|-----|-----------|---------------------|--------------------------|------------------|------------------------|----------|-----------------|----------------|----------------|--------------------|----------|------------------|-------------------------|----------------|------------------------|----------------|
+| 49  | No        | Travel_Rarely       | Research & Development   | 22.0             | 3.0                    | 5.0      | 4.0             | Divorced       | 20627.0       | 3.0                | No       | 4.0              | 4.0                     | 4.0            | 0.0                    | 21.0           |
+| 50  | No        | Travel_Rarely       | Research & Development   | 8.0              | 3.0                    | 3.0      | 4.0             | Divorced       | 11947.0       | 2.0                | Yes      | 4.0              | 3.0                     | 3.0            | 0.0                    | 17.0           |
+| 32  | No        | Travel_Rarely       | Research & Development   | 21.0             | 4.0                    | 5.0      | 4.0             | Married        | 24026.0       | 3.0                | Yes      | 4.0              | 4.0                     | 3.0            | 1.0                    | 13.0           |
+| 38  | No        | Travel_Rarely       | Sales                    | 8.0              | 4.0                    | 3.0      | 3.0             | Divorced       | 11140.0       | 1.0                | No       | 4.0              | 4.0                     | 4.0            | 0.0                    | 18.0           |
+| 28  | Yes       | Travel_Frequently   | Sales                    | 27.0             | 1.0                    | 1.0      | 1.0             | Single         | 3034.0        | 8.0                | Yes      | 1.0              | 1.0                     | 1.0            | 1.0                    | 1.0            |
+
 > First 5 rows table showing dataset structure.
 
 ---
@@ -113,9 +118,6 @@ Multiple models evaluated:
 | Random Forest | Tested |
 | **XGBoost** | ✔ Best model — selected for deployment 🎯 |
 
-### Final Architecture
-🖼️ *Architecture Diagram Placeholder*  
-> Flow: Data ➜ Preprocessing ➜ MLflow Tracking ➜ XGBoost Model ➜ FastAPI Service ➜ Frontend UI (planned)
 
 ---
 
@@ -135,8 +137,6 @@ Useful for HR action targeting:
 
 The trained model is tracked via **MLflow** and served using **FastAPI** as a prediction API.
 
-🖼️ *FastAPI Endpoint Screenshot Placeholder*  
-> Example JSON response for prediction request.
 
 ---
 
